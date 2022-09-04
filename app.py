@@ -31,7 +31,7 @@ def callback():
 
 def reply(intent,text,reply_token,id,disname):
     if intent == 'intent 5':
-        text_message = TextSendMessage(text='ทดสอบสำเร็จ')
+        text_message = TextSendMessage(text='ทดสอบสำเร็จแล้ว')
         line_bot_api.reply_message(reply_token,text_message)
 
 if __name__ == "__main__":

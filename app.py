@@ -47,6 +47,13 @@ def handle_message(event): # handling event
         words=" ".join(words)
         words=words.lower()
         if words !="":
+            # นับจำนวนคำ
+            saChar=["\"",",","(",")","[","@","_","!","#","$","%","^","&","*","(",")","<",">","?","/","\\","|","}","{","~",":","]","=","+","'","‘","’","“","”",".","0","1","2","3","4","5","6","7","8","9"]
+            for i in saChar:
+                cawords=(words.split(i))
+                cawords=" ".join(cawords)
+            cawords=cawords.split()
+            cwords=len(cawords)
             # Part of speech
             Tag= {}
             adj = {}
@@ -405,13 +412,6 @@ def handle_message(event): # handling event
                             check=True
                             outwords.append("\n  -"+str(j)+" = "+str(Nintj[i]))
             outwords="".join(outwords)
-            # นับจำนวนคำ
-            saChar=["\"",",","(",")","[","@","_","!","#","$","%","^","&","*","(",")","<",">","?","/","\\","|","}","{","~",":","]","=","+","'","‘","’","“","”",".","0","1","2","3","4","5","6","7","8","9"]
-            for i in saChar:
-                cawords=(words.split(i))
-                cawords=" ".join(cawords)
-            cawords=cawords.split()
-            cwords=len(cawords)
             # นับพารากราฟ
             cPar=msg.count('\n')+1
             # นับประโยค

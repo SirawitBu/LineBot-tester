@@ -8,8 +8,8 @@ from difflib import SequenceMatcher
 
 app = Flask(__name__)
 
-line_bot_api = LineBotApi('CoN0YvFATwDFogUfP1SmWj2vBfQc4Iy5e3iVY9um10vinYoJawyBrVaaTsNrKQgC9W/qIh+1igd+NMlaMG6h5vPRihd30gZ2JebgDsaWHJKxqAK4VPNAthRPEM1SoWFKMNPaWyVjH1eIsRM1Cwnh/QdB04t89/1O/w1cDnyilFU=')
-handler = WebhookHandler('bbab043108ed440b8497cc5b39e386bc')
+line_bot_api = LineBotApi('dgvDg3/Ou3XrBtmjzx6j200Lm23d/9DgIbnIARsri6gtw7tNzx16DXdmYIbK93vC9W/qIh+1igd+NMlaMG6h5vPRihd30gZ2JebgDsaWHJJX0gNhhGMf+oFkdlLdJk8mWViY4S4NlbtlmHogS+qk0QdB04t89/1O/w1cDnyilFU=')
+handler = WebhookHandler('a534fdef0949cbf86a5bab7db713dcc0')
 
 @app.route("/callback", methods=['POST'])
 def callback():

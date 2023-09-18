@@ -1,4 +1,3 @@
-from cgi import print_form
 from flask import Flask, request
 from linebot.models import *
 from linebot import *
